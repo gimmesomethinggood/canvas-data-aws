@@ -7,16 +7,16 @@ Description:
 Parameters:
   EnvironmentParameter:
     Type: String
-    Default: prod
+    Default: poc
     Description: The environment name.
-    AllowedValues: [dev, qa, prod]
+    AllowedValues: [dev, qa, prod, poc]
   LambdaFunctionZipFileKeyParameter:
     Type: String
-    Default: "canvas-data-aws/canvas-data-lambda-05272019-173758.zip"
+    Default: "canvas-data-aws-poc/canvas-data-lambda-10052023-125313.zip"
     Description: The S3 key (file path) where the Lambda function package zip file is stored. If you've packaged your own version of the functions, replace this with your own zip file.
   LambdaFunctionBucketParameter:
     Type: String
-    Default: "huit-at-public-build-artifacts"
+    Default: "canvas-data-aws-poc-build-artifacts"
     Description: The S3 bucket where the Lambda function package is stored. If you've packaged your own version of the functions, replace this with your own bucket name.
   ApiKeyParameter:
     Type: String
